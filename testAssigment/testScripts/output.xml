@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.6 on darwin)" generated="20231109 01:16:20.642" rpa="false" schemaversion="4">
+<suite id="s1" name="Test1" source="/Users/gouthambs/PycharmProjects/pythonProject/testAssigment/testScripts/test1.robot">
+<test id="s1-t1" name="Validate submission of the application" line="19">
+<kw name="open the test browser" library="GenericResource" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>browser=${browser_name}</arg>
+<arg>options=add_experimental_option("detach", True)</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231109 01:16:20.768" level="INFO">Opening browser 'chrome' to base url 'https://automationinterface1.front.staging.optimy.net/en/'.</msg>
+<status status="PASS" starttime="20231109 01:16:20.767" endtime="20231109 01:16:30.318"/>
+</kw>
+<status status="PASS" starttime="20231109 01:16:20.767" endtime="20231109 01:16:30.318"/>
+</kw>
+<kw name="Close the Cookie Window">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231109 01:16:33.319" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20231109 01:16:30.319" endtime="20231109 01:16:33.320"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id:cookie-close-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231109 01:16:33.324" level="INFO">Clicking button 'id:cookie-close-button'.</msg>
+<status status="PASS" starttime="20231109 01:16:33.321" endtime="20231109 01:16:34.210"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20231109 01:16:34.210" endtime="20231109 01:16:34.790"/>
+</kw>
+<status status="PASS" starttime="20231109 01:16:30.318" endtime="20231109 01:16:34.790"/>
+</kw>
+<kw name="Login Using Credentials">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231109 01:16:37.792" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20231109 01:16:34.790" endtime="20231109 01:16:37.793"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:.ml-auto.btn.btn-outline-primary</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231109 01:16:37.796" level="INFO">Clicking element 'css:.ml-auto.btn.btn-outline-primary'.</msg>
+<status status="PASS" starttime="20231109 01:16:37.794" endtime="20231109 01:16:41.416"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231109 01:16:44.418" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20231109 01:16:41.416" endtime="20231109 01:16:44.418"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:login-email</arg>
+<arg>${mail_id}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231109 01:16:44.421" level="INFO">Typing text 'optimyautomationtester@gmail.com' into text field 'id:login-email'.</msg>
+<status status="PASS" starttime="20231109 01:16:44.419" endtime="20231109 01:16:45.263"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:login-password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231109 01:16:45.263" level="INFO">Typing text 'yRMhojb7' into text field 'id:login-password'.</msg>
+<status status="PASS" starttime="20231109 01:16:45.263" endtime="20231109 01:16:46.074"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:.btn.btn-lg.btn-primary.col-12.mt-1.mt-md-2</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231109 01:16:46.075" level="INFO">Clicking element 'css:.btn.btn-lg.btn-primary.col-12.mt-1.mt-md-2'.</msg>
+<status status="PASS" starttime="20231109 01:16:46.074" endtime="20231109 01:16:47.587"/>
+</kw>
+<status status="PASS" starttime="20231109 01:16:34.790" endtime="20231109 01:16:47.587"/>
+</kw>
+<kw name="Click on Submit a New Application">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231109 01:16:50.590" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20231109 01:16:47.588" endtime="20231109 01:16:50.590"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:.btn.btn.btn-primary.btn-lg.col-md-auto</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231109 01:16:50.593" level="INFO">Clicking element 'css:.btn.btn.btn-primary.btn-lg.col-md-auto'.</msg>
+<status status="PASS" starttime="20231109 01:16:50.591" endtime="20231109 01:16:52.903"/>
+</kw>
+<status status="PASS" starttime="20231109 01:16:47.587" endtime="20231109 01:16:52.903"/>
+</kw>
+<kw name="Check and Continue">
+<arg>Continue with the submission of an application?</arg>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${header_text}</var>
+<arg>css:h1.h1</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20231109 01:16:52.956" level="INFO">${header_text} = Continue with the submission of an application?</msg>
+<status status="PASS" starttime="20231109 01:16:52.904" endtime="20231109 01:16:52.956"/>
+</kw>
+<if>
+<branch type="IF" condition="'${header_text}' == '${checking}'">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:.btn.btn-outline-primary</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231109 01:16:52.957" level="INFO">Clicking element 'css:.btn.btn-outline-primary'.</msg>
+<status status="PASS" starttime="20231109 01:16:52.957" endtime="20231109 01:17:00.523"/>
+</kw>
+<status status="PASS" starttime="20231109 01:16:52.957" endtime="20231109 01:17:00.523"/>
+</branch>
+<status status="PASS" starttime="20231109 01:16:52.957" endtime="20231109 01:17:00.523"/>
+</if>
+<status status="PASS" starttime="20231109 01:16:52.903" endtime="20231109 01:17:00.523"/>
+</kw>
+<kw name="Fill Out the Form">
+<kw name="Join Path" library="OperatingSystem">
+<var>${json_file_path}</var>
+<arg>/Users/gouthambs/PycharmProjects/pythonProject/testAssigment/testScripts${/}..</arg>
+<arg>resourceFiles</arg>
+<arg>userdata.json</arg>
+<doc>Joins the given path part(s) to the given base path.</doc>
+<msg timestamp="20231109 01:17:00.523" level="INFO">${json_file_path} = /Users/gouthambs/PycharmProjects/pythonProject/testAssigment/resourceFiles/userdata.json</msg>
+<status status="PASS" starttime="20231109 01:17:00.523" endtime="20231109 01:17:00.523"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${json_file_path}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20231109 01:17:00.523" endtime="20231109 01:17:00.523"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${json_data}</var>
+<arg>json.load(open('${json_file_path}'))</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20231109 01:17:00.525" level="INFO">${json_data} = {'First_name': 'test', 'Last_name': 'automation', 'Address': '93, Bengaluru', 'Postal code': '1000 - Bruxelles / Brussel', 'Country': 'India', 'Gender': 'Male', 'Role': 'Manual + Automation tester', '...</msg>
+<status status="PASS" starttime="20231109 01:17:00.523" endtime="20231109 01:17:00.525"/>
+</kw>
+<kw name="Get Value From Json" library="JSONLibrary">
+<var>${json_values}</var>
+<arg>${json_data}</arg>
+<arg>$.first_name</arg>
+<doc>Get Value From JSON using JSONPath</doc>
+<msg timestamp="20231109 01:17:00.534" level="INFO">${json_values} = []</msg>
+<status status="PASS" starttime="20231109 01:17:00.525" endtime="20231109 01:17:00.534"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:629d7b5a-f6a1-5a14-ac1d-21b2fafdbdef</arg>
+<arg>${json_data["First_name"]}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231109 01:17:00.535" level="INFO">Typing text 'test' into text field 'id:629d7b5a-f6a1-5a14-ac1d-21b2fafdbdef'.</msg>
+<status status="PASS" starttime="20231109 01:17:00.534" endtime="20231109 01:17:01.386"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:23e5e47e-bab1-5a1e-9929-f180182bda43</arg>
+<arg>${json_data["Last_name"]}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231109 01:17:01.387" level="INFO">Typing text 'automation' into text field 'id:23e5e47e-bab1-5a1e-9929-f180182bda43'.</msg>
+<status status="PASS" starttime="20231109 01:17:01.386" endtime="20231109 01:17:01.756"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:7172c3f2-f508-5f9c-82a1-11ce9d0f3edc::c3f44a2e-72e9-587b-b88c-b5c9fbeed2db</arg>
+<arg>${json_data["Address"]}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231109 01:17:01.756" level="INFO">Typing text '93, Bengaluru' into text field 'id:7172c3f2-f508-5f9c-82a1-11ce9d0f3edc::c3f44a2e-72e9-587b-b88c-b5c9fbeed2db'.</msg>
+<status status="PASS" starttime="20231109 01:17:01.756" endtime="20231109 01:17:01.985"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>css:.form-control.ui-autocomplete-input</arg>
+<arg>${json_data["Postal code"]}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231109 01:17:01.986" level="INFO">Typing text '1000 - Bruxelles / Brussel' into text field 'css:.form-control.ui-autocomplete-input'.</msg>
+<status status="PASS" starttime="20231109 01:17:01.985" endtime="20231109 01:17:02.168"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>id:7e595970-fc12-558c-9eaf-385735fcae6b</arg>
+<arg>${json_data["Country"]}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20231109 01:17:02.168" level="INFO">Selecting options from selection list 'id:7e595970-fc12-558c-9eaf-385735fcae6b' by label India.</msg>
+<status status="PASS" starttime="20231109 01:17:02.168" endtime="20231109 01:17:04.853"/>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${gender_list}</var>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20231109 01:17:04.853" level="INFO">${gender_list} = {}</msg>
+<status status="PASS" starttime="20231109 01:17:04.853" endtime="20231109 01:17:04.853"/>
+</kw>
+<kw name="Set To Dictionary" library="Collections">
+<arg>${gender_list}</arg>
+<arg>Male</arg>
+<arg>f3fa11a5-a516-5cec-9025-b940b1b113d0</arg>
+<doc>Adds the given ``key_value_pairs`` and/or ``items`` to the ``dictionary``.</doc>
+<status status="PASS" starttime="20231109 01:17:04.853" endtime="20231109 01:17:04.853"/>
+</kw>
+<kw name="Set To Dictionary" library="Collections">
+<arg>${gender_list}</arg>
+<arg>Female</arg>
+<arg>514632f0-b9ec-5946-997e-f486fcd8276c</arg>
+<doc>Adds the given ``key_value_pairs`` and/or ``items`` to the ``dictionary``.</doc>
+<status status="PASS" starttime="20231109 01:17:04.853" endtime="20231109 01:17:04.853"/>
+</kw>
+<kw name="Set To Dictionary" library="Collections">
+<arg>${gender_list}</arg>
+<arg>"Prefer not to answer"</arg>
+<arg>f9291e23-4c53-56d3-8115-45818912be01</arg>
+<doc>Adds the given ``key_value_pairs`` and/or ``items`` to the ``dictionary``.</doc>
+<status status="PASS" starttime="20231109 01:17:04.853" endtime="20231109 01:17:04.853"/>
+</kw>
+<kw name="Dictionary Should Contain Key" library="Collections">
+<arg>${gender_list}</arg>
+<arg>${json_data["Gender"]}</arg>
+<doc>Fails if ``key`` is not found from ``dictionary``.</doc>
+<status status="PASS" starttime="20231109 01:17:04.853" endtime="20231109 01:17:04.853"/>
+</kw>
+<kw name="Get From Dictionary" library="Collections">
+<var>${value}</var>
+<arg>${gender_list}</arg>
+<arg>${json_data["Gender"]}</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<msg timestamp="20231109 01:17:04.854" level="INFO">${value} = f3fa11a5-a516-5cec-9025-b940b1b113d0</msg>
+<status status="PASS" starttime="20231109 01:17:04.853" endtime="20231109 01:17:04.854"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:${value}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231109 01:17:04.854" level="INFO">Clicking element 'id:f3fa11a5-a516-5cec-9025-b940b1b113d0'.</msg>
+<msg timestamp="20231109 01:17:06.924" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-25.png"&gt;&lt;img src="selenium-screenshot-25.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20231109 01:17:06.924" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;input id="f3fa11a5-a516-5cec-9025-b940b1b113d0" type="radio" class="custom-control-input radio" name="4ea18d95-3478-5541-8a78-fca9336f03f5" value="f3fa11a5-a516-5cec-9025-b940b1b113d0" data-reusable-value="" data-fv-field="4ea18d95-3478-5541-8a78-fca9336f03f5"&gt; is not clickable at point (625, 901). Other element would receive the click: &lt;div class="custom-control-label radio-checkbox-li-element-label"&gt;...&lt;/div&gt;
+  (Session info: chrome=119.0.6045.105)
+Stacktrace:
+0   chromedriver                        0x0000000104542004 chromedriver + 4169732
+1   chromedriver                        0x0000000104539ff8 chromedriver + 4136952
+2   chromedriver                        0x000000010418f500 chromedriver + 292096
+3   chromedriver                        0x00000001041db3f8 chromedriver + 603128
+4   chromedriver                        0x00000001041d94e4 chromedriver + 595172
+5   chromedriver                        0x00000001041d7118 chromedriver + 586008
+6   chromedriver                        0x00000001041d6174 chromedriver + 582004
+7   chromedriver                        0x00000001041ca4f8 chromedriver + 533752
+8   chromedriver                        0x00000001041c9db4 chromedriver + 531892
+9   chromedriver                        0x000000010420f818 chromedriver + 817176
+10  chromedriver                        0x00000001041c85e8 chromedriver + 525800
+11  chromedriver                        0x00000001041c94b8 chromedriver + 529592
+12  chromedriver                        0x0000000104508334 chromedriver + 3932980
+13  chromedriver                        0x000000010450c970 chromedriver + 3950960
+14  chromedriver                        0x00000001044f0774 chromedriver + 3835764
+15  chromedriver                        0x000000010450d478 chromedriver + 3953784
+16  chromedriver                        0x00000001044e2ab4 chromedriver + 3779252
+17  chromedriver                        0x0000000104529914 chromedriver + 4069652
+18  chromedriver                        0x0000000104529a90 chromedriver + 4070032
+19  chromedriver                        0x0000000104539c70 chromedriver + 4136048
+20  libsystem_pthread.dylib             0x00000001885ef034 _pthread_start + 136
+21  libsystem_pthread.dylib             0x00000001885e9e3c thread_start + 8
+</msg>
+<status status="FAIL" starttime="20231109 01:17:04.854" endtime="20231109 01:17:06.927"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231109 01:17:06.927" endtime="20231109 01:17:06.927"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231109 01:17:06.927" endtime="20231109 01:17:06.927"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>css:.form-control.ui-autocomplete-input</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="NOT RUN" starttime="20231109 01:17:06.927" endtime="20231109 01:17:06.927"/>
+</kw>
+<status status="FAIL" starttime="20231109 01:17:00.523" endtime="20231109 01:17:06.927"/>
+</kw>
+<kw name="close the test browser" library="GenericResource" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20231109 01:17:06.927" endtime="20231109 01:17:07.008"/>
+</kw>
+<status status="PASS" starttime="20231109 01:17:06.927" endtime="20231109 01:17:07.008"/>
+</kw>
+<status status="FAIL" starttime="20231109 01:16:20.767" endtime="20231109 01:17:07.009">ElementClickInterceptedException: Message: element click intercepted: Element &lt;input id="f3fa11a5-a516-5cec-9025-b940b1b113d0" type="radio" class="custom-control-input radio" name="4ea18d95-3478-5541-8a78-fca9336f03f5" value="f3fa11a5-a516-5cec-9025-b940b1b113d0" data-reusable-value="" data-fv-field="4ea18d95-3478-5541-8a78-fca9336f03f5"&gt; is not clickable at point (625, 901). Other element would receive the click: &lt;div class="custom-control-label radio-checkbox-li-element-label"&gt;...&lt;/div&gt;
+  (Session info: chrome=119.0.6045.105)
+Stacktrace:
+0   chromedriver                        0x0000000104542004 chromedriver + 4169732
+1   chromedriver                        0x0000000104539ff8 chromedriver + 4136952
+2   chromedriver                        0x000000010418f500 chromedriver + 292096
+3   chromedriver                        0x00000001041db3f8 chromedriver + 603128
+4   chromedriver                        0x00000001041d94e4 chromedriver + 595172
+5   chromedriver                        0x00000001041d7118 chromedriver + 5...
+    [ Message content over the limit has been removed. ]
+...hromedriver                        0x00000001041c94b8 chromedriver + 529592
+12  chromedriver                        0x0000000104508334 chromedriver + 3932980
+13  chromedriver                        0x000000010450c970 chromedriver + 3950960
+14  chromedriver                        0x00000001044f0774 chromedriver + 3835764
+15  chromedriver                        0x000000010450d478 chromedriver + 3953784
+16  chromedriver                        0x00000001044e2ab4 chromedriver + 3779252
+17  chromedriver                        0x0000000104529914 chromedriver + 4069652
+18  chromedriver                        0x0000000104529a90 chromedriver + 4070032
+19  chromedriver                        0x0000000104539c70 chromedriver + 4136048
+20  libsystem_pthread.dylib             0x00000001885ef034 _pthread_start + 136
+21  libsystem_pthread.dylib             0x00000001885e9e3c thread_start + 8</status>
+</test>
+<doc>To validate "submission of the application"</doc>
+<status status="FAIL" starttime="20231109 01:16:20.643" endtime="20231109 01:17:07.011"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Test1">Test1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
