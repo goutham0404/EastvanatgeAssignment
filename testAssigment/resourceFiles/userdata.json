@@ -1,0 +1,15 @@
+{
+    "First_name": "test",
+    "Last_name": "automation",
+    "Address":  "93, Bengaluru",
+    "Postal code": "1000 - Bruxelles / Brussel",
+    "Country": "India",
+    "Gender": "Male",
+    "Role": "Manual + Automation tester",
+    "Tools": [
+        "JIRA", "Python", "Robot Framework"
+    ],
+    "Objective":
+        "* Identification of bugs and errors. * Delivering quality products. * Justification requirements. * Increasing confidence in the product. * Enhancing growth"
+
+}
